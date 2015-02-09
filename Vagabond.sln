@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagabond", "Vagabond\Vagabond.csproj", "{1C8074AF-3370-4799-8578-C903FA0AD6DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{C8C09B9A-E56C-4E2D-A0A3-81E0801BA689}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagabond.Reddit", "Vagabond.Reddit\Vagabond.Reddit.csproj", "{1FC8E8A2-4E05-4C9C-A760-E9877F0A4A63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagabond.Reddit.IntegrationTests", "Vagabond.Reddit.IntegrationTests\Vagabond.Reddit.IntegrationTests.csproj", "{EF02FA7D-4197-46C1-BC4A-249D36762581}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{076BC3B8-0CD0-447A-8418-DE28550D37C3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C8074AF-3370-4799-8578-C903FA0AD6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8074AF-3370-4799-8578-C903FA0AD6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8074AF-3370-4799-8578-C903FA0AD6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8074AF-3370-4799-8578-C903FA0AD6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC8E8A2-4E05-4C9C-A760-E9877F0A4A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC8E8A2-4E05-4C9C-A760-E9877F0A4A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC8E8A2-4E05-4C9C-A760-E9877F0A4A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC8E8A2-4E05-4C9C-A760-E9877F0A4A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

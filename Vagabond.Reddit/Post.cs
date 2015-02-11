@@ -1,5 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
+using Vagabond.Things;
 
 namespace Vagabond.Reddit
 {

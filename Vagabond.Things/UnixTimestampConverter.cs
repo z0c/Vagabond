@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Vagabond.Reddit
+namespace Vagabond.Things
 {
     public class UnixTimestampConverter : JsonConverter
     {

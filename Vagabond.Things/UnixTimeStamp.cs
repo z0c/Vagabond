@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vagabond.Reddit
+namespace Vagabond.Things
 {
     public static class UnixTimeStamp
     {

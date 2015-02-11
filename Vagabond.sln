@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{076BC3
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vagabond.Things", "Vagabond.Things\Vagabond.Things.csproj", "{58BEAA05-330E-4B3B-B1A8-8008D088E940}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF02FA7D-4197-46C1-BC4A-249D36762581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58BEAA05-330E-4B3B-B1A8-8008D088E940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BEAA05-330E-4B3B-B1A8-8008D088E940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BEAA05-330E-4B3B-B1A8-8008D088E940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BEAA05-330E-4B3B-B1A8-8008D088E940}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

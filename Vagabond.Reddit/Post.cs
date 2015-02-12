@@ -1,6 +1,6 @@
 ﻿using System;
 using Newtonsoft.Json;
-using Vagabond.Things;
+using Vagabond.Things.Converters;
 
 namespace Vagabond.Reddit
 {

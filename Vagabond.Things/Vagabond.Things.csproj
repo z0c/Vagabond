@@ -46,8 +46,7 @@
     <Compile Include="..\Vagabond\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="UnixTimeStamp.cs" />
-    <Compile Include="UnixTimestampConverter.cs" />
+    <Compile Include="Converters\UnixTimestampConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

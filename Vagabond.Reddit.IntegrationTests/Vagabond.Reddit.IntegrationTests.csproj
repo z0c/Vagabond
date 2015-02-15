@@ -47,7 +47,7 @@
     <Compile Include="..\Vagabond\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="PostReaderTests.cs" />
+    <Compile Include="PostRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

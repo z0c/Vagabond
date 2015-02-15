@@ -5,12 +5,12 @@ using NUnit.Framework;
 namespace Vagabond.Reddit.IntegrationTests
 {
     [TestFixture]
-    public class PostReaderTests
+    public class PostRepositoryTests
     {
         [TestCase("lowpoly")]
         public void WhenGetPostsThenListOfPostsIsReturned(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 
@@ -20,7 +20,7 @@ namespace Vagabond.Reddit.IntegrationTests
         [TestCase("lowpoly")]
         public void WhenGetPostsThenPostHasDomain(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 
@@ -34,7 +34,7 @@ namespace Vagabond.Reddit.IntegrationTests
         [TestCase("lowpoly")]
         public void WhenGetPostsThenPostHasTitle(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 
@@ -48,7 +48,7 @@ namespace Vagabond.Reddit.IntegrationTests
         [TestCase("lowpoly")]
         public void WhenGetPostsThenPostHasScore(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 
@@ -62,7 +62,7 @@ namespace Vagabond.Reddit.IntegrationTests
         [TestCase("lowpoly")]
         public void WhenGetPostsThenPostHasId(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 
@@ -76,7 +76,7 @@ namespace Vagabond.Reddit.IntegrationTests
         [TestCase("lowpoly")]
         public void WhenGetPostsThenPostHasUrl(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 
@@ -90,7 +90,7 @@ namespace Vagabond.Reddit.IntegrationTests
         [TestCase("lowpoly")]
         public void WhenGetPostsThenPostHasCreated(string subRedit)
         {
-            var underTest = new PostReader();
+            var underTest = new PostRepository();
 
             var actual = underTest.GetPosts(subRedit);
 

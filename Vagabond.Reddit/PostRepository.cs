@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Vagabond.Reddit
 {
-    public class PostReader
+    public class PostRepository
     {
         private const string SubReditUrl = "http://reddit.com/r/{0}.json";
 

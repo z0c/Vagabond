@@ -14,5 +14,7 @@ namespace Vagabond.Reddit
         [JsonProperty("created")]
         [JsonConverter(typeof(UnixTimestampConverter))]
         public DateTime CreatedDateTime { get; set; }
+        
+        public bool IsImgurAlbum { get { return Url.StartsWith("http://imgur.com/a/"); } }
     }
 }

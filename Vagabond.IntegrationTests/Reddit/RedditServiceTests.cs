@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using Vagabond.Reddit;
 
@@ -100,6 +101,25 @@ namespace Vagabond.IntegrationTests.Reddit
                 Console.WriteLine(p.CreatedDateTime);
                 Assert.That(p.CreatedDateTime, Is.Not.Null);
             }
+        }
+
+        [TestCase("gonewild")]
+        public void WhenGetPostsHasImgurAlbum(string subRedit)
+        {
+            var underTest = new RedditService();
+
+            var actual = underTest
+                .GetPosts(subRedit)
+                .Where(p => p.IsImgurAlbum)
+                .OrderByDescending(p => p.Score);
+
+            foreach (var p in actual)
+            {
+                Console.WriteLine(p.Score + ": " + p.Title + " -> " + p.Url);
+                StringAssert.StartsWith("http://imgur.com/a/", p.Url);
+            }
+
+            Assert.That(actual.Count(), Is.GreaterThan(0));
         }
     }
 }

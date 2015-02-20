@@ -46,6 +46,7 @@
     <Compile Include="..\Vagabond\Properties\AssemblyInfo.cs">
       <Link>Properties\AssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Imgur\ImgurServiceTests.cs" />
     <Compile Include="Reddit\RedditServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>

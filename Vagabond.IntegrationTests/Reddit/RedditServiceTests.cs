@@ -108,10 +108,7 @@ namespace Vagabond.IntegrationTests.Reddit
         {
             var underTest = new RedditService();
 
-            var actual = underTest
-                .GetPosts(subRedit)
-                .Where(p => p.IsImgurAlbum)
-                .OrderByDescending(p => p.Score);
+            var actual = underTest.GetImgurAlbumsOrderedByScore(subRedit).ToList();
 
             foreach (var p in actual)
             {

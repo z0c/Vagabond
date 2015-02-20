@@ -16,5 +16,10 @@ namespace Vagabond.Reddit
             var json = JObject.Parse(response);
             return json["data"]["children"].Select(p => p["data"].ToObject<Post>());
         }
+
+        public IEnumerable<Post> GetImgurAlbumsOrderedByScore(string subredit)
+        {
+            return GetPosts(subredit).Where(p => p.IsImgurAlbum).OrderByDescending(p => p.Score);
+        }
     }
 }

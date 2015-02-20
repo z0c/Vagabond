@@ -7,7 +7,7 @@ namespace Vagabond.Reddit
 {
     public class RedditService
     {
-        private const string SubReditUrl = "http://reddit.com/r/{0}.json";
+        private const string SubReditUrl = "http://www.reddit.com/r/{0}.json";
 
         public IEnumerable<Post> GetPosts(string subRedit)
         {

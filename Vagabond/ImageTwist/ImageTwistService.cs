@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Vagabond.ImageTwist
 {
@@ -11,7 +12,12 @@ namespace Vagabond.ImageTwist
 
         public void CreateFolder(string name)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
+        }
+
+        public void UploadUrlsToFolder(string folderName, List<string> urls)
+        {
+            throw new NotImplementedException();
         }
     }
 }

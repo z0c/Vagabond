@@ -24,5 +24,13 @@ namespace Vagabond.IntegrationTests.ImageTwist
 
             underTest.CreateFolder(name);
         }
+
+        [TestCase("test", "http://test.com")]
+        public void UploadImagesToFolder(string folderName, string imageUrl)
+        {
+            var underTest = new ImageTwistService();
+
+            underTest.UploadUrlsToFolder(folderName, new List<string> { imageUrl });
+        }
     }
 }

@@ -7,7 +7,9 @@ namespace Vagabond.Imgur
     {
         public IEnumerable<string> GetAlbumImages(string albumId)
         {
-            var auth = new ImgurNet.Authentication.ClientAuthentication("somecrap", true);
+            var auth = new ImgurNet.Authentication.ClientAuthentication(
+                Configuration.Imgur.ClientId,
+                true);
             var i = new ImgurNet.Imgur(auth);
             var a = new ImgurNet.ApiEndpoints.AlbumEndpoint(i);
             var r = a.GetAllImagesFromAlbumAsync(albumId).Result;
